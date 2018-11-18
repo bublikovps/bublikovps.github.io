@@ -1,0 +1,560 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Код для подключения шрифта в /css/stylename.css */
+
+  @font-face {
+      font-family: "OpenSansRegular";
+      src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+      src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+      url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "OpenSansLight";
+      src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+      src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+      url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "OpenSansBold";
+      src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+      src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+      url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "GothamProRegular";
+      src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+      src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+      url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "GothamProBold";
+      src: url("../fonts/GothamProBold/GothamProBold.eot");
+      src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+      url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "GothamProBlack";
+      src: url("../fonts/GothamProBlack/GothamProBlack.eot");
+      src: url("../fonts/GothamProBlack/GothamProBlack.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/GothamProBlack/GothamProBlack.woff") format("woff"),
+      url("../fonts/GothamProBlack/GothamProBlack.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+
+  @font-face {
+      font-family: "GothamProMedium";
+      src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+      src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+      url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "GothamProLight";
+      src: url("../fonts/GothamProLight/GothamProLight.eot");
+      src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+      url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "LatoRegular";
+      src: url("../fonts/LatoRegular/LatoRegular.eot");
+      src: url("../fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/LatoRegular/LatoRegular.woff") format("woff"),
+      url("../fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "LatoBold";
+      src: url("../fonts/LatoBold/LatoBold.eot");
+      src: url("../fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/LatoBold/LatoBold.woff") format("woff"),
+      url("../fonts/LatoBold/LatoBold.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+  @font-face {
+      font-family: "LatoLight";
+      src: url("../fonts/LatoLight/LatoLight.eot");
+      src: url("../fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+      url("../fonts/LatoLight/LatoLight.woff") format("woff"),
+      url("../fonts/LatoLight/LatoLight.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+  }
+
+body{
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.Home{
+  background: #fff;
+  height: 94px;
+  width: 100%;
+}
+
+.navbar-logo{
+  margin: 22px auto;
+}
+.navbar-nav{
+  margin: 26px auto 20px auto;
+}
+.navbar-nav ul{
+  display: inline-flex;
+}
+
+.navbar-nav ul li a{
+    text-align: center;
+    padding:10px 20px;
+    color: #868686;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "LatoRegular", Arial, sans-serif;
+    font-size: 14px;
+}
+.navbar-nav ul li a:hover{
+  background: #ffbb42;
+  color:#ffffff;
+  border-radius: 3px;
+}
+.menu-btn{
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after{
+  position: absolute;
+  top:50%; margin-top: -1px;
+  left:50%; margin-left: -10px;
+  width: 20px;
+  height: 2px;
+  background-color: #222;
+}
+.menu-btn span::before,
+.menu-btn span::after{
+  content:'';
+}
+.menu-btn span::before{
+  transform: translateY(-5px);
+}
+.menu-btn span::after{
+  transform: translateY(+5px);
+}
+
+
+header {
+background: #709dca;
+height: 590px;
+z-index: 1;
+}
+
+.bg1{
+  width: 100%;
+  margin-top:0 auto;
+  text-align: center;
+}
+.bg1 h1{
+  font-family: "GothamProBlack";
+  font-size: 35px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 110px;
+  margin: 0;
+ }
+.bg1 p {
+    font-family: "OpenSansLight";
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+ }
+
+ .placeholder{
+  font-family: "OpenSansLight";
+  font-size: 13px;
+ }
+
+.btn-btn-primary{
+  font-family: "OpenSansRegular";
+  font-size: 14px;
+  text-transform: uppercase;
+  background: #ffbb42;
+  border-radius: 5px;
+  border:0px solid #ffbb42;
+  color:#ffffff;
+  width: 211px;
+}
+.btn-btn-primary:hover{
+  background: #ffbb10;
+}
+
+
+.sl img{
+  margin-top: 60px;
+  margin-left: 220px;
+  z-index: 2;
+}
+
+.header-slider{
+  margin-top: -382px;
+  margin-left: 100px;
+  z-index: 3;
+}
+
+
+
+
+.Service {
+  background: #fff;
+  height: 925px;
+  width: 100%;
+  margin-bottom:0;
+  text-align: center;
+}
+.bg2 h2{
+  
+  font-family: "GothamProBlack";
+  font-size: 30px;
+  color: #394b50;
+  text-transform: uppercase;
+  padding-top: 200px;
+
+ }
+.bg2 p{
+    font-family: "OpenSansRegular";
+    font-size: 16px;
+    color: #394b50;
+ }
+.advantages {
+  padding-top: 95px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.advantages-card{
+  margin:auto 40px;
+  max-width: 475px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+.logo-card-Font img{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.logo-card-Fully{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.logo-card-Working img{
+  margin-top: 20px;
+  margin-right: 18px;
+}
+.logo-card-Retina{
+  margin-top: 20px;
+  margin-right: 18px;
+}
+.logo-card-Friendly img{
+  margin-top: 20px;
+  margin-right: 26px;
+}
+.logo-card-Flat{
+  margin-top: 20px;
+  margin-right: 26px;
+}
+.advantages img:hover{
+  color:#f6772c;
+}
+
+.card-body p {
+  text-align:left;
+}
+
+.card-title{
+    
+    font-family: "LatoBold";
+    font-size: 16px;
+    color: #394b50;
+    text-transform: uppercase;
+    
+}
+.card-text{
+  
+  font-family: "OpenSansRegular";
+    font-size: 13px;
+    color: #394b50;
+}
+
+.About__us{
+  height: 623px;
+  background-color: #ffc155;
+  overflow: hidden;
+}
+.About-bg{
+  overflow: hidden;
+  width: 50%;
+  float: left;
+  
+}
+.About-content{
+  padding-top: 165px;
+  padding-left:  80px;
+  width: 50%;
+  float: right;
+
+}
+.About-content h2{
+  
+  font-family: "GothamProBlack";
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+ }
+.About-content p{
+    font-family: "OpenSansRegular";
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+.btn-about{
+    background: #ffc155;
+    border: 1px solid #e7ad48;
+    border-radius: 1px;
+    text-align: center;
+    height: 46px;
+    width: 146px;
+  
+  }
+.btn-about a{
+    margin-top: 15px;
+    color:#ffffff;
+    font-family: "LatoRegular";
+    font-size: 14px;
+    text-transform: uppercase;
+    
+   }
+
+.btn-about a:hover{
+  text-decoration: none;
+  color:#ffffff;
+}
+
+.Pricing-Table{
+  height: 900px;
+  background:  #e7edf3;
+  text-align: center;
+}
+.Pricing-Table h2{
+  padding-top: 130px;
+}
+
+
+
+
+.cards{
+  width: 100%;
+  display: flex;
+  padding-top: 65px;
+  
+}
+
+.card-plan{
+  border: 1px solid #ccd5df;
+  background: #ffffff;
+  height: 440px;
+  font-family: "LatoRegular";
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1;
+  
+}
+
+
+
+.card-plan h3{
+  margin-top: 55px;
+  margin-bottom: 30px;
+  font-family: "Latolight";
+  font-size: 25px;
+  text-transform: uppercase;
+  color:#818b95;
+}
+
+
+.card-plan p{
+  color: #ffbb42;
+  font-family: "LatoBold";
+  font-size: 50px;
+  margin-bottom: 5px;
+}
+
+.per{
+  /*margin-top: -30px;
+  margin-bottom: 20px;*/
+  font-size: 14px;
+  font-family: "LatoLight";
+  color:#818b95;
+}
+span {
+  font-family: "LatoRegular";
+  font-size: 14px;
+  color:#818b95;
+}
+
+/*color="#c2e1ff"*/
+
+
+.card-plan:hover {
+  background: #709dca;
+  height: 500px;
+  margin-top: -30px;
+  padding-top: 30px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+ }
+
+ .card-plan:hover .per,
+ .card-plan:hover p,
+ .card-plan:hover h3 {
+  color: #ffffff;
+  transition: all 0.5s ease;
+ }
+ .card-plan:hover sup{
+  font-family: "LatoLight";
+ }
+ .card-plan:hover span{
+  color: #c2e1ff;
+ }
+
+.btn-card-plan{
+  background: #ffbb42;
+  border-radius: 3px;
+  height: 42px;
+  width: 130px;
+  margin: 30px auto;
+  padding-top: 15px;
+  text-align: center;
+}
+.btn-card-plan a{
+  color:#ffffff;
+  font-family: "LatoRegular";
+  font-size: 14px;
+  text-transform: uppercase;
+  
+ }
+
+.btn-card-plan a:hover{
+text-decoration: none;
+color:#ffffff;
+}
+
+.How-it-work{
+  height: 860px;
+  background:  #ffffff;
+  text-align: center;
+}
+.How-it-work h2{
+  font-family: "GothamProBlack";
+  font-size: 30px;
+}
+.How-it-work p{
+  font-size: 18px;
+  font-family: "LatoLight";  
+}
+
+@media (min-width: 1200px){
+.container {
+    max-width: 1170px;
+}
+
+}
